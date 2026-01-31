@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, table th, table td {
+            border: 2px solid #333;
+        }
+        table thead {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Author
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="b : ${books}">
+                <td th:text="${b.id}"></td>
+                <td th:text="${b.title}"></td>
+                <td th:text="${b.author}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
