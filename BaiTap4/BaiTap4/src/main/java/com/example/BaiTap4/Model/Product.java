@@ -6,6 +6,9 @@ import lombok.*;
 import org.hibernate.validator.constraints.Length;
 import jakarta.validation.constraints.Max;
 
+@Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product {
     private int id;
 
@@ -22,54 +25,54 @@ public class Product {
 
     private Category category;
 
-    public Product(int id, String name, String image, long price, Category category) {
-        this.id = id;
-        this.name = name;
-        this.image = image;
-        this.price = price;
-        this.category = category;
-    }
-
-    public Product() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public long getPrice() {
-        return price;
-    }
-
-    public void setPrice(long price) {
-        this.price = price;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
+//    public Product(int id, String name, String image, long price, Category category) {
+//        this.id = id;
+//        this.name = name;
+//        this.image = image;
+//        this.price = price;
+//        this.category = category;
+//    }
+//
+//    public Product() {
+//    }
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getImage() {
+//        return image;
+//    }
+//
+//    public void setImage(String image) {
+//        this.image = image;
+//    }
+//
+//    public long getPrice() {
+//        return price;
+//    }
+//
+//    public void setPrice(long price) {
+//        this.price = price;
+//    }
+//
+//    public Category getCategory() {
+//        return category;
+//    }
+//
+//    public void setCategory(Category category) {
+//        this.category = category;
+//    }
 }
